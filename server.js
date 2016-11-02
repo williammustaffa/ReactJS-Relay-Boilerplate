@@ -3,9 +3,8 @@ import graphQLHTTP from 'express-graphql';
 import path from 'path';
 import webpack from 'webpack';
 import WebpackDevServer from 'webpack-dev-server';
-import {Schema} from './data/schema';
+import { Schema } from './data/schema';
 import WebPackConfig from './webpack.dev.config';
-import electron from 'electron-prebuilt';
 import childProcess from 'child_process';
 
 const APP_PORT = 3000;
@@ -32,6 +31,7 @@ var app = new WebpackDevServer(compiler, {
   publicPath: '/assets/js/',
   stats: {colors: true},
 });
+
 // Serve static resources
 app.use('/', express.static(path.resolve(__dirname, 'app')));
 app.listen(APP_PORT, () => {
