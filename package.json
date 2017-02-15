@@ -6,7 +6,7 @@
   "scripts": {
     "start": "babel-node server.js",
     "update-schema": "babel-node ./scripts/updateSchema.js",
-    "build": "webpack --config webpack.config.babel.js --progress --profile --colors"
+    "build": "webpack --config webpack.config.js --progress --profile --colors"
   },
   "dependencies": {
     "babel-core": "^6.5.2",
@@ -19,6 +19,7 @@
     "classnames": "2.2.3",
     "express": "4.13.4",
     "express-graphql": "0.4.9",
+    "graphiql": "^0.9.2",
     "graphql": "0.4.17",
     "graphql-relay": "0.3.6",
     "history": "^1.17.0",

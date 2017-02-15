@@ -4,7 +4,7 @@ import path from 'path';
 import webpack from 'webpack';
 import WebpackDevServer from 'webpack-dev-server';
 import { Schema } from './data/schema';
-import WebPackConfig from './webpack.config.babel';
+import WebPackConfig from './webpack.config';
 import childProcess from 'child_process';
 
 const APP_PORT = 3000;
